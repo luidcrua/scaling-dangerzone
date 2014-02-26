@@ -1,0 +1,1082 @@
+<!doctype html>
+<html>
+<head>
+    <meta name="format-detection" content="telephone=no" />
+    <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+    <link rel="stylesheet" type="text/css" href="css/index.css" />
+    <meta charset="utf-8">
+    <title>deShopping</title>
+    
+    <!-- Lungo - Stylesheets -->
+    <link rel="stylesheet" href="bower_components/lungo/lungo.css">
+    <link rel="stylesheet" href="bower_components/lungo/lungo.icon.css">
+    <!--link rel="stylesheet" href="bower_components/lungo/lungo.icon.brand.css"-->
+    <link rel="stylesheet" href="bower_components/lungo/lungo.theme.css">
+    <!-- App Stylesheet -->
+    <link rel="stylesheet" type="text/css" href="app/resources/stylesheets/app.css">
+    <link rel="stylesheet" type="text/css" href="app/resources/fonts/stylesheet.css">
+    <link rel="stylesheet" type="text/css" href="app/resources/fonts/icons/style.css">
+    <link rel="stylesheet" type="text/css" href="app/resources/fonts/cc/style.css">
+    <link rel="stylesheet" type="text/css" href="app/resources/fonts/profile/style.css">
+    
+    <link rel="stylesheet" type="text/css" href="app/resources/stylesheets/zocial.css" />
+    <link rel="stylesheet" type="text/css" href="app/resources/stylesheets/anim.css" />
+
+	<!--link rel="stylesheet" type="text/css" href="app/resources/lungoSugar/date-picker/lungo.third.datepicker.css" /-->
+</head>
+
+<body>
+    <!--div class="app">
+        <h1>Apache Cordova</h1>
+        <div id="deviceready" class="blink">
+            <p class="event listening">Connecting to Device</p>
+            <p class="event received">Device is Ready</p>
+        </div>
+    </div-->
+	<!--INICIO - LISTADO DE CC-->
+    <!--section id="main" data-transition="slide" data-aside="features" class="drag"-->
+    <section id="main" data-transition="slide">
+        <header data-title="CENTROS COMERCIALES">
+            <nav>
+                <!--a href="#" data-view-aside="features" data-icon="menu"></a-->
+                <!--a href="#" data-view-section="loginit" data-icon="user" class="on-right"></a-->
+                <a href="#" data-view-aside="perfil" data-icon="user" class="on-right"></a>
+            </nav>
+            <!--<nav class="on-right">
+                <a href="#"  ><abbr class="text tiny ">v2.2</abbr></a>
+            </nav>-->
+        </header>
+        
+        <article id="main-article" class="list indenteds scroll active bkMenu"> 
+	        <div id="menuNuevo">
+            <ul> 
+		        <li><img src="app/resources/images/btn-cc/btn-unicentro.png" data-view-section="cenComMenu" data-title="UNICENTRO" /></li>
+		        <li><img src="app/resources/images/btn-cc/btn-andino.png" data-view-section="cenComMenu" data-title="ANDINO" /></li>
+		        <li><img src="app/resources/images/btn-cc/btn-titan.png" data-view-section="cenComMenu" data-title="TITÁN PLAZA" /></li>
+		        <li><img src="app/resources/images/btn-cc/btn-granestacion.png" data-view-section="cenComMenu" data-title="GRAN ESTACIÓN" /></li>
+		        <li><img src="app/resources/images/btn-cc/btn-santafe.png" data-view-section="cenComMenu" data-title="SANTA FÉ"/></li>
+		        <li><img src="app/resources/images/btn-cc/btn-avchile.png" data-view-section="cenComMenu" data-title="AVENIDA CHILE" /></li>
+	        </ul>
+            </div>
+        </article>
+        <article id="newMenu" class="scroll">
+          <div class="empty" style="width:100%">
+            <div class="initOptions">
+              <img src="app/resources/images/menu/btn-tiendas.png"/>
+              <img src="app/resources/images/menu/btn-destacados.png"/>
+            </div>
+            <div class="initOptions-bottom">
+              <img src="app/resources/images/menu/btn_mapa.png"/>
+              <img src="app/resources/images/menu/btn_eventos.png"/>
+            </div>
+          </div>
+ 	 	</article>
+    </section>
+    <!--MENÚ INTERIOR DE CC-->
+    <section id="cenComMenu" data-transition="slide">
+        <!--header data-title="" data-back="chevron-left"-->
+        <header data-title="">
+            <nav>
+                <a href="#" data-view-section="main" data-icon-mall="&#xe605;" class="on-left"></a>
+                <!--a href="#" data-view-section="loginit" data-icon="user" class="on-right"></a-->
+                <a href="#" data-view-aside="perfil" data-icon="user" class="on-right"></a>
+            </nav>
+        </header>
+        
+        <article id="Menu_Int" class="active list scroll">
+        	<div class="empty" style="width:100%">
+                <div class="initOptions">
+                  <!--<img src="app/resources/images/menu/btn-tiendas.png" data-view-section="centroComercial"/>
+                  <img src="app/resources/images/menu/btn-destacados.png" data-view-section="destacados"/>-->
+                  <div id="contenedor-td">
+                  <div class="contAnim" data-view-section="centroComercial">
+                    <div class="maskdiv">
+                        <div class="topPush"></div>
+                        <img src="app/resources/images/menu/tiendas-bolsas.png" id="imageBolsas" class="imageAnim"/>
+                    </div>
+                    <img src="app/resources/images/menu/base-tiendas.png" class="imgBase"/>
+                  </div>
+                  <div class="contAnim" style="margin: 0 0 0 -5%;" id="btnDestacados">
+                    <div class="maskdiv">
+                        <div class="topPush"></div>
+                        <img src="app/resources/images/menu/destaca-globo.png" id="imageGlobo" class="imageAnim"/>
+                    </div>
+                    <img src="app/resources/images/menu/base-destacados.png" class="imgBase"/>
+                  </div>
+                </div>
+                </div>
+                <div class="initOptions-bottom">
+                  <div style="width:50%; text-align:center; float:left; border-right:1px solid #BF001F;"><img src="app/resources/images/menu/btn_mapa.png" data-view-section="mapa"/></div>
+                  <div style="width:50%; text-align:center; float:left; "><img src="app/resources/images/menu/btn_eventos.png" id="btnEventos" /></div>
+                </div>
+            </div>
+ 	 	</article>
+    </section>
+	<!--LISTADO DE CATEGORÍAS-->
+    <section id="centroComercial" data-transition="slide">
+        <header id="textoCentro" data-title="">
+            <nav>
+                <a href="#" data-view-section="main" data-icon-mall="&#xe605;" class="on-left"></a>
+                <!--a href="#" data-view-section="loginit" data-icon="user" class="on-right"></a-->
+                <a href="#" data-view-aside="perfil" data-icon="user" class="on-right"></a>
+            </nav>
+        </header>
+        <article id="layout-art2" class="active list scroll">
+            <div class="form">
+              <fieldset data-icon="search">
+                <input style="color:#FFF" id="txt-ac-destacado" name="txt-ac-destacado" type="search" placeholder="Buscar..."/>
+                <ul id="ac-resultados"></ul>
+              </fieldset>
+              </div>
+            <div class="empty">
+                <strong>Categorias</strong>
+            </div>
+            <div id="listCat" class="list scroll">
+            	<ul></ul>
+            </div>
+        </article>
+        <footer>
+            <!--nav class="with-labels"-->
+            <nav>
+                <a href="#" data-view-section="centroComercial" data-label="Tiendas" data-icon-mall="&#xe600;" class="active"></a>
+                <a href="#" data-view-section="mapa" data-label="Mapa" data-icon-mall="&#xe601;"></a>
+                <a href="#" data-label="Destacados" data-icon-mall="&#xe603;"></a>
+                <a href="#" data-label="Eventos" data-icon-mall="&#xe602;"></a>
+            </nav>
+        </footer>
+    </section>
+    <!--LISTADO DE ALMACENES - COMERCIOS-->
+    <section id="subcategorias" data-transition="slide">
+        <header data-title="">
+            <nav>
+                <a href="#" data-view-section="main" data-icon-mall="&#xe605;" class="on-left"></a>
+                <!--a href="#" data-view-section="loginit" data-icon="user" class="on-right"></a-->
+                <a href="#" data-view-aside="perfil" data-icon="user" class="on-right"></a>
+            </nav>
+        </header>
+    
+        <article id="layout-art2" class="active list scroll">
+            <div class="form">
+              <fieldset data-icon="search">
+                <input style="color:#FFF" id="txt-ac-destacado" name="txt-ac-destacado" type="search" placeholder="Buscar..."/>
+                <ul id="ac-resultados"></ul>
+              </fieldset>
+              </div>
+            <div class="empty" id="titCategoria">
+                <strong>Ropa Masculina</strong>
+            </div>
+            <div id="list">
+                <ul></ul>
+            </div>
+        </article>
+        <footer>
+            <!--nav class="with-labels"-->
+            <nav>
+                <a href="#" data-view-section="centroComercial" data-label="Tiendas" data-icon-mall="&#xe600;" class="active"></a>
+                <a href="#" data-view-section="mapa" data-label="Mapa" data-icon-mall="&#xe601;"></a>
+                <a href="#" data-label="Destacados" data-icon-mall="&#xe603;"></a>
+                <a href="#" data-label="Eventos" data-icon-mall="&#xe602;"></a>
+            </nav>
+        </footer>
+    </section>
+    <!--ALMACÉN - COMERCIO-->
+    <section id="almacen1" data-transition="slide">
+        <header data-title="">
+            <nav>
+                <a href="#" data-view-section="main" data-icon-mall="&#xe605;" class="on-left"></a>
+                <a href="#" data-action="follow" data-icon="star-empty" class="on-right"  style="color:#dfc81a"></a>
+            </nav>
+        </header>
+        <article id="layout-art2" class="active list scroll" style="position:relative">
+          <div id="imagenAlmacen"><img src="" class="logoAlmacen">
+              <img src="" class="imgGrandes"/></div>
+			<p style="background-color:#e5e5e5; padding:5%; color:#000; font-size:90%"></p>
+            <div style="background-color:#eeeeee">
+              <div class="form">
+                  <fieldset data-icon="search">
+                  	<select class="custom" id="ordenar" style="color:#000; width:95%">
+                      <option value="1">Ordenar por...</option>
+                      <option value="2">Fecha</option>
+                      <option value="3">+ Votados</option>
+                    </select>
+                  </fieldset>
+              </div>
+              Octubre 2013
+              <div id="listPromocion">
+              </div>
+          </div>
+        </article>
+        <footer>
+        
+            <!--nav class="with-labels"-->
+            <nav>
+                <a href="#" data-view-section="centroComercial" data-label="Tiendas" data-icon-mall="&#xe600;" class="active"></a>
+                <a href="#" data-view-section="mapa" data-label="ComoLlegar" data-icon-mall="&#xe604;"></a>
+                <a href="#" data-label="Destacados" data-icon-mall="&#xe603;"></a>
+                <a href="#" data-label="Eventos" data-icon-mall="&#xe602;"></a>
+            </nav>
+        </footer>
+    </section>
+    <!--ALMACÉN - COMERCIO-->
+    <section id="almacen2" data-transition="slide">
+        <header data-title="">
+            <nav>
+                <a href="#" data-view-section="main" data-icon-mall="&#xe605;" class="on-left"></a>
+                <a href="#" data-action="follow" data-icon="star-empty" class="on-right"  style="color:#dfc81a"></a>
+            </nav>
+        </header>
+        <article id="interna" class="active list scroll" style="position:relative">
+          <div style="background-color:#eeeeee; height:100%;">
+            <div class="form">
+              <fieldset data-icon="search">
+                <input style="color:#000" id="txt-ac-destacado" name="txt-ac-destacado" type="search" placeholder="Buscar..."/>
+                <ul id="ac-resultados"></ul>
+              </fieldset>
+              </div>
+			  <div class="promoInterna">
+			  </div>
+          </div>	
+        </article>
+        <footer>
+        
+            <!--nav class="with-labels"-->
+            <nav>
+                <a href="#" data-view-section="centroComercial" data-label="Tiendas" data-icon-mall="&#xe600;" class="active"></a>
+                <a href="#" data-view-section="mapa" data-label="ComoLlegar" data-icon-mall="&#xe604;"></a>
+                <a href="#" data-label="Destacados" data-icon-mall="&#xe603;"></a>
+                <a href="#" data-label="Eventos" data-icon-mall="&#xe602;"></a>
+            </nav>
+        </footer>
+    </section>
+    <!--INTERNA DE EVENTO O DESTACADO-->
+    <section id="almacen3" data-transition="slide">
+        <header data-title="">
+            <nav>
+                <a href="#" data-view-section="main" data-icon-mall="&#xe605;" class="on-left"></a>
+                <!--a href="#" data-view-section="loginit" data-icon="user" class="on-right"></a-->
+                <a href="#" data-view-aside="perfil" data-icon="user" class="on-right"></a>
+            </nav>
+        </header>
+        <article id="evenDestaInterna" class="active list scroll" style="position:relative">
+          <div style="background-color:#eeeeee; height:100%;">
+            <div class="form">
+              <fieldset data-icon="search">
+                <input style="color:#000" id="txt-ac-destacado" name="txt-ac-destacado" type="search" placeholder="Buscar..."/>
+                <ul id="ac-resultados"></ul>
+              </fieldset>
+              </div>
+			  <div class="promoInterna">
+			  </div>
+          </div>	
+        </article>
+        <footer>
+        
+            <!--nav class="with-labels"-->
+            <nav>
+                <a href="#" data-view-section="centroComercial" data-label="Tiendas" data-icon-mall="&#xe600;" class="active"></a>
+                <a href="#" data-view-section="mapa" data-label="ComoLlegar" data-icon-mall="&#xe604;"></a>
+                <a href="#" data-label="Destacados" data-icon-mall="&#xe603;"></a>
+                <a href="#" data-label="Eventos" data-icon-mall="&#xe602;"></a>
+            </nav>
+        </footer>
+    </section>
+    <!--MAPA-->
+    <section id="mapa" data-transition="slide">
+        <header data-title="ARTURO CALLE - SANTAF&Eacute;">
+            <nav>
+                <a href="#" data-view-section="main" data-icon-mall="&#xe605;" class="on-left"></a>
+                <!--a href="#" data-view-section="loginit" data-icon="user" class="on-right"></a-->
+                <a href="#" data-view-aside="perfil" data-icon="user" class="on-right"></a>
+            </nav>
+        </header>
+    
+        <article id="proximamente" class="active">
+                <span><img src="app/resources/images/proximamente-mapa.png" style="width:100%"></span>
+        </article>
+        <footer>
+        	
+            <!--nav class="with-labels"-->
+            <nav>
+                <a href="#" data-view-section="centroComercial" data-label="Tiendas" data-icon-mall="&#xe600;"></a>
+                <a href="#" data-view-section="mapa" data-label="Mapa" data-icon-mall="&#xe601;" class="active"></a>
+                <a href="#" data-label="Destacados" data-icon-mall="&#xe603;"></a>
+                <a href="#" data-label="Eventos" data-icon-mall="&#xe602;"></a>
+            </nav>
+        </footer>
+    </section>
+    <!--DESTACADOS-->
+    <section id="destacados" data-transition="slide">
+        <header data-title="">
+            <nav>
+                <a href="#" data-view-section="main" data-icon-mall="&#xe605;" class="on-left"></a>
+                <!--a href="#" data-view-section="loginit" data-icon="user" class="on-right"></a-->
+                <a href="#" data-view-aside="perfil" data-icon="user" class="on-right"></a>
+            </nav>
+        </header>
+        <article id="artDestacados" class="active list scroll">
+            <div style="background-color:#eeeeee; padding-bottom:3%">
+            <div class="form">
+              <fieldset data-icon="search">
+                <input style="color:#FFF" id="txt-ac-destacado" name="txt-ac-destacado" type="search" placeholder="Buscar..."/>
+                <ul id="ac-resultados"></ul>
+              </fieldset>
+              </div>
+              <div id="listDestacados">
+              </div>
+              <!--div class="contPost" data-id="405">
+                <div class="postUser">
+                	<img src="app/resources/images/promos/destacados1.jpg"/>
+                    <div class="bottom-cont-destacado">
+                       <h2>Destacado 1</h2>
+					   <p style="clear:both">Tienda 2</p>
+                       <div class="shareProm">
+					   	<a href="#" data-icon-mall="&#xe60a;" class="shareBt" style="color:#959387;"></a><a href="#" class="heartLike" data-icon="heart-empty" style="color:#D41F1B; font-size: 175%; line-height:110%; float:left"></a><a href="#" style="padding-top:4%; color:#D41F1B; float:left">28</a>
+					   </div>
+                   </div>
+                </div>
+              </div>
+            <div class="contPost" data-id="406">
+                <div class="postUser"><img src="app/resources/images/promos/destacados2.jpg"/>
+                  <div class="bottom-cont-destacado">
+                       <h2>Destacado 2</h2>
+					   <p style="clear:both">Tienda 4</p>
+                       <div class="shareProm">
+					   	<a href="#" data-icon-mall="&#xe60a;" class="shareBt" style="color:#959387;"></a><a href="#" class="heartLike" data-icon="heart-empty" style="color:#D41F1B; font-size: 175%; line-height:110%; float:left"></a><a href="#" style="padding-top:4%; color:#D41F1B; float:left">28</a>
+					   </div>
+                   </div>
+                </div>
+              </div>
+            <div class="contPost" data-id="407">
+                <div class="postUser"><img src="app/resources/images/promos/destacados3.jpg"/>
+                  <div class="bottom-cont-destacado">
+                       <h2>Destacado 3</h2>
+					   <p style="clear:both">Tienda 1</p>
+                       <div class="shareProm">
+					   	<a href="#" data-icon-mall="&#xe60a;" class="shareBt" style="color:#959387;"></a><a href="#" class="heartLike" data-icon="heart-empty" style="color:#D41F1B; font-size: 175%; line-height:110%; float:left"></a><a href="#" style="padding-top:4%; color:#D41F1B; float:left">28</a>
+					   </div>
+                   </div>
+                </div>
+            </div>
+            <div class="contPost" data-id="408">
+                <div class="postUser"><img src="app/resources/images/promos/destacados4.jpg"/>
+                  <div class="bottom-cont-destacado">
+                       <h2>Destacado 4</h2>
+					   <p style="clear:both">Tienda 3</p>
+                       <div class="shareProm">
+					   	<a href="#" data-icon-mall="&#xe60a;" class="shareBt" style="color:#959387;"></a><a href="#" class="heartLike" data-icon="heart-empty" style="color:#D41F1B; font-size: 175%; line-height:110%; float:left"></a><a href="#" style="padding-top:4%; color:#D41F1B; float:left">28</a>
+					   </div>
+                   </div>
+                </div>
+            </div-->
+          </div>
+        </article>
+        <footer>
+        
+            <!--nav class="with-labels"-->
+            <nav>
+                <a href="#" data-view-section="centroComercial" data-label="Tiendas" data-icon-mall="&#xe600;"></a>
+                <a href="#" data-view-section="mapa" data-label="Mapa" data-icon-mall="&#xe601;"></a>
+                <a href="#" data-label="Destacados" data-icon-mall="&#xe603;" class="active"></a>
+                <a href="#" data-label="Eventos" data-icon-mall="&#xe602;"></a>
+            </nav>
+        </footer>
+    </section>
+    <!--EVENTOS-->
+    <section id="eventos" data-transition="slide">
+        <header data-title="">
+            <nav>
+                <a href="#" data-view-section="main" data-icon-mall="&#xe605;" class="on-left"></a>
+                <!--a href="#" data-view-section="loginit" data-icon="user" class="on-right"></a-->
+                <a href="#" data-view-aside="perfil" data-icon="user" class="on-right"></a>
+            </nav>
+        </header>
+    
+        <article id="artEventos" class="active list scroll">
+            <div style="background-color:#eeeeee; min-height:700px;">
+            <div class="form">
+              <fieldset data-icon="search">
+                <input style="color:#FFF" id="txt-ac-destacado" name="txt-ac-destacado" type="search" placeholder="Buscar..."/>
+                <ul id="ac-resultados"></ul>
+              </fieldset>
+              </div>
+              <div id="listEventos" style="min-height:700px;">
+              </div>
+              <!--div class="contPost" data-id="409">
+                <div class="postUser">
+                <img src="app/resources/images/eventos/eventos1.jpg"/>
+                  <div class="bottom-cont-destacado">
+                       <h2>Evento 1</h2>
+                       <div class="shareProm">
+					   	<a href="#" data-icon-mall="&#xe60a;" class="shareBt" style="color:#959387;"></a><a href="#" class="heartLike" data-icon="heart-empty" style="color:#D41F1B; font-size: 175%; line-height:110%; float:left"></a><a href="#" style="padding-top:4%; color:#D41F1B; float:left">28</a>
+					   </div>
+                   </div>
+                </div>
+              </div>
+            <div class="contPost" data-id="4010">
+                <div class="postUser"><img src="app/resources/images/eventos/eventos2.jpg"/>
+                  <div class="bottom-cont-destacado">
+                       <h2>Evento 2</h2>
+                       <div class="shareProm">
+					   	<a href="#" data-icon-mall="&#xe60a;" class="shareBt" style="color:#959387;"></a><a href="#" class="heartLike" data-icon="heart-empty" style="color:#D41F1B; font-size: 175%; line-height:110%; float:left"></a><a href="#" style="padding-top:4%; color:#D41F1B; float:left">28</a>
+					   </div>
+                   </div>
+                </div>
+              </div>
+            <div class="contPost" data-id="4011">
+                <div class="postUser"><img src="app/resources/images/eventos/eventos3.jpg"/>
+                  <div class="bottom-cont-destacado">
+                       <h2>Evento 3</h2>
+                       <div class="shareProm">
+					   	<a href="#" data-icon-mall="&#xe60a;" class="shareBt" style="color:#959387;"></a><a href="#" class="heartLike" data-icon="heart-empty" style="color:#D41F1B; font-size: 175%; line-height:110%; float:left"></a><a href="#" style="padding-top:4%; color:#D41F1B; float:left">28</a>
+					   </div>
+                   </div>
+                </div>
+            </div>
+            <div class="contPost" data-id="4012">
+                <div class="postUser"><img src="app/resources/images/eventos/eventos4.jpg"/>
+                  <div class="bottom-cont-destacado">
+                       <h2>Evento 4</h2>
+                       <div class="shareProm">
+					   	<a href="#" data-icon-mall="&#xe60a;" class="shareBt" style="color:#959387;"></a><a href="#" class="heartLike" data-icon="heart-empty" style="color:#D41F1B; font-size: 175%; line-height:110%; float:left"></a><a href="#" style="padding-top:4%; color:#D41F1B; float:left">28</a>
+					   </div>
+                   </div>
+                </div>
+            </div-->
+          </div>
+        </article>
+        <footer>
+        
+            <!--nav class="with-labels"-->
+            <nav>
+                <a href="#" data-view-section="centroComercial" data-label="Tiendas" data-icon-mall="&#xe600;"></a>
+                <a href="#" data-view-section="mapa" data-label="Mapa" data-icon-mall="&#xe601;"></a>
+                <a href="#" data-label="Destacados" data-icon-mall="&#xe603;"></a>
+                <a href="#" data-label="Eventos" data-icon-mall="&#xe602;" class="active"></a>
+            </nav>
+        </footer>
+    </section>
+	<!--LOGIN-->
+    <section id="loginit" data-transition="slide">
+        <header data-title="PERFIL">
+            <nav>
+                <a href="#" data-view-section="main" data-icon-mall="&#xe605;" class="on-left"></a>
+            </nav>
+        </header>
+        <article id="layout-art5" class="active scroll">
+            <div class="empty">
+                <a href="#" class="zocial facebook">Reg&iacute;strate con Facebook</a>
+                <a href="#" class="zocial guest" data-view-section="registro" data-view-article="form-registro">Reg&iacute;strate</a>
+            </div>
+        </article>
+    </section>
+    <!--REGISTRO-->
+    <section id="registro" data-transition="slide">
+        <header data-title="PERFIL">
+            <nav>
+                <a href="#" data-view-section="main" data-icon-mall="&#xe605;" class="on-left"></a>
+            </nav>
+        </header>
+        <article id="form-registro" class="active indented scroll form">
+          <div class="empty">
+            <img id="imgAvatarUsuario" src="app/resources/images/user-default.png"/>
+			<input id="fileUpload" type="file" accept="image/*">
+            <!--a href="#" class="button"  data-icon="upload" data-label="Sube tu foto" style="float:right"></a>
+            <a href="#" class="button"  data-icon="camera" data-label="Toma una foto" style="float:right"></a-->
+            <div class="espformreg form">
+            <input type="text" id="txt-nombre" placeholder="Nombre" class="border" />
+            <span style="width:30%; color:#bf001f; text-align:right; float:left; margin-right:5%">Genero:</span>
+            <div style="float:left; width:65%">
+              <label class="select">
+                <select class="custom" id="cb-sexo">
+                  <option value="0">Seleccione</option>
+                  <option value="F">Masculino</option>
+                  <option value="M">Femenino</option>
+                  </select>
+                </label>
+            </div>
+            <span style="width:30%; color:#bf001f; text-align:right; float:left; margin-right:5%">Fecha de nacimiento:</span>
+            <div style="float:left; width:65%"><!--button onclick="showcalendar()" style="position:absolute;z-index:1;margin:50px auto auto 50px;">Show Calendar</button-->
+                        <!--input type="number" class="border" id="txt-edad" /-->
+				<label class="select">
+                <select class="custom" id="cb-ano">
+                  <option value="1980">1980</option>
+                  <option value="1981">1981</option>
+                  <option value="1982">1982</option>
+                  <option value="1983">1983</option>
+                  <option value="1984">1984</option>
+                  <option value="1985">1985</option>
+                  <option value="1986">1986</option>
+                  <option value="1987">1987</option>
+                  <option value="1988">1988</option>
+                  <option value="1989">1989</option>
+                  <option value="1990">1990</option>
+                  <option value="1991">1991</option>
+                  <option value="1992">1992</option>
+                  <option value="1993">1993</option>
+                  <option value="1994">1994</option>
+                  <option value="1995">1995</option>
+                  <option value="1996">1996</option>
+                  <option value="1997">1997</option>
+                  <option value="1998">1998</option>
+                  <option value="1999">1999</option>
+                  <option value="2000">2000</option>
+                  <option value="2001">2001</option>
+                  <option value="2002">2002</option>
+                  <option value="2003">2003</option>
+                  <option value="2004">2004</option>
+                  <option value="2005">2005</option>
+                  <option value="2006">2006</option>
+                  <option value="2007">2007</option>
+                  <option value="2008">2008</option>
+                  </select>
+                </label>
+				<label class="select">
+                <select class="custom" id="cb-mes">
+                  <option value="Enero">Enero</option>
+                  <option value="Febrero">Febrero</option>
+                  <option value="Marzo">Marzo</option>
+                  <option value="Abril">Abril</option>
+                  <option value="Mayo">Mayo</option>
+                  <option value="Junio">Junio</option>
+                  <option value="Julio">Julio</option>
+                  <option value="Agosto">Agosto</option>
+                  <option value="Septiembre">Septiembre</option>
+                  <option value="Octubre">Octubre</option>
+                  <option value="Noviembre">Noviembre</option>
+                  <option value="Diciembre">Diciembre</option>
+                  </select>
+                </label>
+                <select class="custom" id="cb-dia">
+                  <option value="1">1</option>
+				  <option value="2">2</option>
+				  <option value="3">3</option>
+				  <option value="4">4</option>
+				  <option value="5">5</option>
+				  <option value="6">6</option>
+				  <option value="7">7</option>
+				  <option value="8">8</option>
+				  <option value="9">9</option>
+				  <option value="10">10</option>
+				  <option value="11">11</option>
+				  <option value="12">12</option>
+				  <option value="13">13</option>
+				  <option value="14">14</option>
+				  <option value="15">15</option>
+				  <option value="16">16</option>
+				  <option value="17">17</option>
+				  <option value="18">18</option>
+				  <option value="19">19</option>
+				  <option value="20">20</option>
+				  <option value="21">21</option>
+				  <option value="22">22</option>
+				  <option value="23">23</option>
+				  <option value="24">24</option>
+				  <option value="25">25</option>
+				  <option value="26">26</option>
+				  <option value="27">27</option>
+				  <option value="28">28</option>
+				  <option value="29">29</option>
+				  <option value="30">30</option>
+				  <option value="31">31</option>
+                  </select>
+                </label>
+            </div>
+            <span style="width:30%; color:#bf001f; text-align:right; float:left; margin-right:5%">E-Mail:</span>
+            <div style="float:left; width:65%">
+                        <input type="email" class="border" id="txt-email" />
+            </div>
+            <span style="width:30%; color:#bf001f; text-align:right; float:left; margin-right:5%">Ciudad:</span>
+            <div style="float:left; width:65%">
+              <label class="select">
+                <select class="custom" id="cb-ciudad">
+                  <option value="0" selected>Seleccione</option>
+                  <option value="1">Bogot&aacute;</option>
+                  <option value="2">Medell&iacute;n</option>
+                  <option value="3">Cali</option>
+                  </select>
+                </label>
+            </div>
+            <span style="width:30%; color:#bf001f; text-align:right; float:left; margin-right:5%">Nivel academico:</span>
+            <div style="float:left; width:65%">
+              <label class="select">
+                <select class="custom" id="cb-nivAcademico">
+                  <option value="0" selected>Seleccione</option>
+                  <option value="1">Universitario</option>
+                  <option value="2">Universitario</option>
+                  <option value="3">Universitario</option>
+                  </select>
+                </label>
+            </div>
+            <span style="width:100%; color:#bf001f; float:left; margin-right:5%; margin-top:5%">
+            <fieldset>
+                    <label class="anchor" style="color:#CCC">Acepto terminos y condiciones</label>
+                    <input type="checkbox" class="inline right" />
+             </fieldset></span>
+             <span style="width:35%; color:#bf001f;float:left; margin-right:5%; margin-top:5%">
+             <a href="#" style="float:left; font-size:14px">Terminos y condiciones</a>
+             </span><button class="anchor margin-bottom" data-label="Guardar" data-action="save" style="float:left; width:60%; margin-top:5%; background-color:#bf001f"></button>
+            </div>
+          </div>
+        </article>
+    </section>
+    <!--NOTIFICACIONES-->
+    <section id="noti" data-transition="slide">
+        <header data-title="PERFIL" data-back="chevron-left">
+        </header>
+        
+        <article id="form-registro" class="indented scroll">
+          <div class="empty">
+            <div id="titNotificacion">NOTIFICACIONES</div>
+            <div id="espacio-noti">
+              <img src="app/resources/images/user-default.png"/>
+               <p><span>Daniel Bermudez</span> a compartido contigo algo interesante. <a href="#">Miralo</a> </p>
+              <div id="share-items"><a href="#" data-icon-mall="&#xe607;"></a><a href="#" data-icon-mall="&#xe606;"></a><a href="#" data-icon-mall="&#xe608;"></a><a href="#" data-icon-mall="&#xe609;"></a><span><a href="#" data-icon-mall="&#xe60a;"></a></span></div>
+            </div>
+            <div id="espacio-noti">
+              <img src="app/resources/images/user-default.png"/>
+               <p><span>Daniel Bermudez</span> a compartido contigo algo interesante. <a href="#">Miralo</a> </p>
+              <div id="share-items"><a href="#" data-icon-mall="&#xe607;"></a><a href="#" data-icon-mall="&#xe606;"></a><a href="#" data-icon-mall="&#xe608;"></a><a href="#" data-icon-mall="&#xe609;"></a><span><a href="#" data-icon-mall="&#xe60a;"></a></span></div>
+            </div>
+            <div id="espacio-noti">
+              <img src="app/resources/images/user-default.png"/>
+               <p><span>Daniel Bermudez</span> a compartido contigo algo interesante. <a href="#">Miralo</a> </p>
+              <div id="share-items"><a href="#" data-icon-mall="&#xe607;"></a><a href="#" data-icon-mall="&#xe606;"></a><a href="#" data-icon-mall="&#xe608;"></a><a href="#" data-icon-mall="&#xe609;"></a><span><a href="#" data-icon-mall="&#xe60a;"></a></span></div>
+            </div>
+            <div id="espacio-noti">
+              <img src="app/resources/images/user-default.png"/>
+               <p><span>Daniel Bermudez</span> a compartido contigo algo interesante. <a href="#">Miralo</a> </p>
+              <div id="share-items"><a href="#" data-icon-mall="&#xe607;"></a><a href="#" data-icon-mall="&#xe606;"></a><a href="#" data-icon-mall="&#xe608;"></a><a href="#" data-icon-mall="&#xe609;"></a><span><a href="#" data-icon-mall="&#xe60a;"></a></span></div>
+            </div>
+          </div>
+        </article>
+        <!--footer>
+        	
+            <nav>
+                <a href="#" data-view-section="centroComercial" data-label="Tiendas" data-icon-mall="&#xe600;"></a>
+                <a href="#" data-view-section="mapa" data-label="Mapa" data-icon-mall="&#xe601;"></a>
+                <a href="#" data-label="Destacados" data-icon-mall="&#xe603;"></a>
+                <a href="#" data-label="Eventos" data-icon-mall="&#xe602;"></a>
+            </nav>
+        </footer-->
+    </section>
+    <script type="text/javascript">
+		String.prototype.ucfirst = function () {
+			// Split the string into words if string contains multiple words.
+			var x = this.split(/\s+/g);
+			for (var i = 0; i < x.length; i++) {
+				/*
+				// Splits the word into two parts. One part being the first letter,
+				// second being the rest of the word.
+				var parts = x[i].match(/(\w)(\w*)/);
+				// Put it back together but uppercase the first letter and
+				// lowercase the rest of the word.
+				x[i] = parts[1].toUpperCase() + parts[2].toLowerCase();
+				alert(parts[2]);
+				*/
+				x[i] = x[i].charAt(0).toUpperCase() + x[i].slice(1).toLowerCase();
+			}
+			// Rejoin the string and return.
+			return x.join('_');
+		};
+	</script>
+    <!-- Animación tienda destacados-->
+    <script src="app/monocle/controller/build/TweenMax.min.js"></script>
+    <script src="app/monocle/controller/build/easing/EasePack.min.js"></script>
+    <!--script src="app/monocle/controller/build/plugins/CSSPlugin.min.js"></script>
+	<script src="app/monocle/controller/build/jquery-1.10.2.min.js"></script>
+    <script src="app/monocle/controller/build/Anim.js"></script-->
+    
+    <!-- Lungo - Dependencies -->
+    <script src="bower_components/quojs/quo.js"></script>
+    <script src="bower_components/lungo/lungo.js"></script>
+    <script src="bower_components/monocle/monocle.js"></script>
+    
+    <script src="app/monocle/model/build/categoria.js"></script>
+    <script src="app/monocle/view/build/categoria.js"></script>
+    <script src="app/monocle/controller/build/listCategoria.js"></script>
+
+    <script src="app/monocle/model/build/comercio.js"></script>
+    <script src="app/monocle/view/build/comercio.js"></script>
+    <script src="app/monocle/controller/build/listComercio.js"></script>
+    
+	<script src="app/monocle/model/build/usuario.js"></script>
+    <script src="app/monocle/controller/build/newUsuario.js"></script>
+
+    <script src="app/monocle/model/build/evento.js"></script>
+    <script src="app/monocle/view/build/evento.js"></script>
+
+    <script src="app/monocle/model/build/promocion.js"></script>
+    <script src="app/monocle/view/build/promocion.js"></script>
+    <script src="app/monocle/view/build/promocionInterna.js"></script>
+    <script src="app/monocle/view/build/destacado.js"></script>
+    <script src="app/monocle/view/build/evenDestaInterna.js"></script>
+    <script src="app/monocle/controller/build/listPromocion.js"></script>
+    
+	<script src="app/resources/lungoSugar/AutoComplete/lungo.third.autocomplete.js"></script>
+	<!--script src="app/resources/lungoSugar/date-picker/lungo.third.datepicker.js"></script-->
+	<script src="app/resources/lungoData/lungo.storage.js"></script>
+    <script src="app/monocle/controller/build/userData.js"></script>
+    <script src="app/monocle/controller/build/lungoReady.js"></script>
+   <!-- Lungo - Sandbox App -->
+    <script>
+		var cenComercialSel = "";
+		var arreCenComerciales = new Array("","ANDINO","ATLANTIS","SANTA FÉ","UNICENTRO","RETIRO","PORTAL 80","GRAN ESTACIÓN","CENTRO MAYOR","AVENIDA CHILE","TITÁN PLAZA");
+		var arreIconosCC = new Array("","","","","","","","","","","");
+		var plenoCambio = false;
+		var comercioSel = "";
+		//id del centro comercial seleccionado
+		//alert(arreCenComerciales.indexOf(nuevoTitulo));
+		
+		
+		//Cambia los títulos de acuerdo al centro comercial seleccionado
+		function cambioTitulo(nuevoTitulo){
+			//alert(nuevoTitulo);
+			//alert($$("#main-article").scrollHeight);
+			//alert(arreCenComerciales.indexOf(nuevoTitulo));
+			Lungo.dom('#cenComMenu h1.title').html(nuevoTitulo);
+			Lungo.dom('#centroComercial h1.title').html(nuevoTitulo);
+			Lungo.dom('#subcategorias h1.title').html(nuevoTitulo);
+			Lungo.dom('#almacen1 h1.title').html(nuevoTitulo);
+			Lungo.dom('#almacen3 h1.title').html(nuevoTitulo);
+			Lungo.dom('#eventos h1.title').html(nuevoTitulo);
+			Lungo.dom('#destacados h1.title').html(nuevoTitulo);
+			Lungo.dom('#mapa h1.title').html(nuevoTitulo);
+		}
+		
+		//Cambia el icono de acuerdo al centro comercial seleccionado
+		function cambiaIcono(nuevoCentro){
+			var cenComercialId = arreCenComerciales.indexOf(nuevoCentro);
+			//console.log $$('footer > nav')
+			//console.log $$('footer > nav').children().last().removeAttr "data-icon-mall"
+			/*
+			$$('#centroComercial > footer > nav').children().last().removeAttr("data-icon-mall");
+			$$('#centroComercial > footer > nav').children().last().attr('data-icon-cc', arreIconosCC[cenComercialId]);
+			$$('#subcategorias > footer > nav').children().last().removeAttr("data-icon-mall");
+			$$('#subcategorias > footer > nav').children().last().attr('data-icon-cc', arreIconosCC[cenComercialId]);
+			$$('#almacen1 > footer > nav').children().last().removeAttr("data-icon-mall");
+			$$('#almacen1 > footer > nav').children().last().attr('data-icon-cc', arreIconosCC[cenComercialId]);
+			$$('#almacen2 > footer > nav').children().last().removeAttr("data-icon-mall");
+			$$('#almacen2 > footer > nav').children().last().attr('data-icon-cc', arreIconosCC[cenComercialId]);
+			$$('#mapa > footer > nav').children().last().removeAttr("data-icon-mall");
+			$$('#mapa > footer > nav').children().last().attr('data-icon-cc', arreIconosCC[cenComercialId]);
+			$$('#destacados > footer > nav').children().last().removeAttr("data-icon-mall");
+			$$('#destacados > footer > nav').children().last().attr('data-icon-cc', arreIconosCC[cenComercialId]);
+			$$('#layout-art2 > footer > nav').children().last().removeAttr("data-icon-mall");
+			$$('#layout-art2 > footer > nav').children().last().attr('data-icon-cc', arreIconosCC[cenComercialId]);
+			*/
+			$$("a[data-label=Eventos]").removeAttr("data-icon-mall");
+			$$("a[data-label=Eventos]").attr('data-icon-cc', arreIconosCC[cenComercialId]);
+		}
+		
+		//Cambia el título del almacen
+		function cambioTituloComercio(nuevoTitulo){
+			Lungo.dom('#almacen1 h1.title').html(nuevoTitulo);
+			Lungo.dom('#almacen2 h1.title').html(nuevoTitulo);
+		}
+		
+		//Trae los comercios dependiendo de la categoría
+		function getComercioXCategoria(categoriaId){
+			var cenComercialId = arreCenComerciales.indexOf(cenComercialSel);
+			//Pone el título de la categoría
+			var catSel = __Model.Categoria.findBy("id", categoriaId);
+			//console.log(catSel);
+			Lungo.dom('section#subcategorias article#layout-art2 div#titCategoria').html(catSel.nombre);
+			//Borra el contenido de la lista de Comercios
+			Lungo.dom('section#subcategorias article#layout-art2 div#list ul').empty();
+			//Trae los comercios dada la categoría
+			var comercioPorCategoria = __Model.Comercio.byCategoriaCenCom(categoriaId,cenComercialId);
+			console.log(comercioPorCategoria);
+			var view;
+			console.log(comercioPorCategoria.length);
+			var numComercioPorCategoria = comercioPorCategoria.length;
+			//Si no hay comercios por esta categoría aún, los trae
+			if(numComercioPorCategoria === 0){
+				//Los trae del servidor
+				//Show loading screen
+				Lungo.Notification.show();
+				$$.post('http://www.mukuralab.com/appmall/kumbia/json/comercioCategoria/' + categoriaId.toString() + '/' + cenComercialId.toString(), {idCategoria: categoriaId, idCenComercial: cenComercialId}, function(data){ //console.log(data);
+					console.log(data);
+					//var comercioPorCategoria = __Model.Comercio.findBy("idCategoria", categoriaId);
+					////alert(comercioPorCategoria);
+					//Hide loading screen
+					Lungo.Notification.hide();
+					numData = data.length;
+					for(var i = 0;i<numData;i++){
+						console.log(data[i].id);
+						__Model.Comercio.create({
+							id: parseInt(data[i].id),
+							idCategoria: parseInt(data[i].idCategoria),
+							idCenComercial: parseInt(data[i].idCentroComercial),
+							nombre: data[i].nombre,
+							imagen: "app/resources/images/almacenes/" + data[i].imagen,
+							imgCabezote: "app/resources/images/almacenes/principal/arturo-grande.png",
+							imgLogo: "app/resources/images/almacenes/principal/arturo-logo.png",
+							descripcion: "Descripción adfadsfasdf asdf ad fad fa dfa df asdf adf asdfasdfasdf asdfasdfasdf asdfasdfadfadf asdfadfasdfasf asdfasdfasdf asdf",
+							visible: (data[i].visible == "S") ? true : false
+						});
+					}
+					/*__Model.Comercio.create({
+						id:1,
+						idCategoria:1,
+						idCenComercial:2,
+						nombre: "Arturo",
+						imagen: "app/resources/images/almacenes/arturocalle.png",
+						visible: true
+					});
+					__Model.Comercio.create({
+						id:2,
+						idCategoria:2,
+						idCenComercial:2,
+						nombre: "Arturo 2",
+						imagen: "app/resources/images/almacenes/arturocalle.png",
+						visible: true
+					});
+					*/
+					comercioPorCategoria = __Model.Comercio.byCategoriaCenCom(categoriaId,cenComercialId);
+					console.log(comercioPorCategoria);
+					numComercioPorCategoria = comercioPorCategoria.length;
+					for(i = 0;i<numComercioPorCategoria;i++){
+						console.log(comercioPorCategoria[i]);
+						view = new __View.Comercio({
+							model: __Model.Comercio
+						});
+						view.append(comercioPorCategoria[i]);
+					}
+				});
+			}else{
+				//Si ya existen, igual los pinta
+				//NO SE PUEDE EVITAR EL ELSE, POR CUESTIONES DE TIEMPO EN EL POST
+				for(var i = 0;i<numComercioPorCategoria;i++){
+					view = new __View.Comercio({
+						model: __Model.Comercio
+					});
+					view.append(comercioPorCategoria[i]);
+				}
+			}
+			//console.log(comercioPorCategoria);
+			/**/
+			
+			//Va para la sección que muestra los comercios
+			Lungo.Router.section("subcategorias");
+			//alert(categoriaId);
+		}
+		
+		//Trae las promociones dependiendo del comercio
+		function getPromoXComercio(comercioId){
+			var cenComercialId = arreCenComerciales.indexOf(cenComercialSel);
+			//Busca el comercio dado el id
+			var comSel = __Model.Comercio.findBy("id", comercioId);
+			comercioSel = comSel;
+			//Cambia el cabezote del comercio y su descripción
+			$$('#imagenAlmacen .logoAlmacen').attr('src', comSel.imgLogo);
+			$$('#imagenAlmacen .imgGrandes').attr('src', comSel.imgCabezote);
+			$$('#imagenAlmacen').siblings().first().html(comSel.descripcion);
+			//Cambia los títulos de las secciones de acuerdo al comercio seleccionado
+			cambioTituloComercio(comSel.nombre);
+			//alert(idComercio);
+			console.log(comSel);
+			$$('section#almacen1 article#layout-art2 div#listPromocion').empty();
+			//Trae las promo dado el comercio
+			var promoPorComercio = __Model.Promocion.byComercioCenCom(comercioId,cenComercialId);
+			console.log(promoPorComercio);
+			var view;
+			view = new __View.Promocion({
+				model: __Model.Promocion
+			});
+			console.log(promoPorComercio.length);
+			var numPromoPorComercio = promoPorComercio.length;
+			//Si no hay comercios por esta categoría aún, los trae
+			if(numPromoPorComercio === 0){
+				//Show loading screen
+				Lungo.Notification.show();
+				//Los trae del servidor
+				//IDUSUARIO
+				$$.post('http://www.mukuralab.com/appmall/kumbia/json/promociones/' + cenComercialId.toString() + '/' + comercioId.toString() + '/1', {idComercio: comercioId, idCenComercial: cenComercialId}, function(data){ //console.log(data);
+					console.log(data);
+					//var comercioPorCategoria = __Model.Comercio.findBy("idCategoria", categoriaId);
+					////alert(comercioPorCategoria);
+					//Hide loading screen
+					Lungo.Notification.hide();
+					numData = data.items.length;
+					for(var i = 0;i<numData;i++){
+						console.log(data.items[i].id);
+						__Model.Promocion.create({
+							id: parseInt(data.items[i].id),
+							idComercio: parseInt(data.items[i].idComercio),
+							idCenComercial: parseInt(data.items[i].idCentroComercial),
+							titulo: data.items[i].titulo,
+							descripcion: data.items[i].descripcion,
+							imagen: "app/resources/images/promos/" + data.items[i].imagen,
+							gustaUsuario: ((data.items[i].gustaUsuario == "0") || (data.items[i].gustaUsuario == 0)) ? "heart-empty" : "heart",
+							meGusta: data.items[i].gustaCount,
+							fechaInicioPublicacion: data.items[i].InicioPublicacion,
+							fechaFinPublicacion: data.items[i].fechaFinPublicacion,
+							superPromo: (data.items[i].superPromo == "S") ? true : false,
+							cantidad: data.items[i].cantidad,
+							promoDestacada: "S",//data.items[i].promoDestacada,
+							visible: (data.items[i].visible == "S") ? true : false
+						});
+						/*__Model.Comercio.create({
+							id: parseInt(data[i].id),
+							idCategoria: parseInt(data[i].idCategoria),
+							idCenComercial: parseInt(data[i].idCentroComercial),
+							nombre: data[i].nombre,
+							imagen: "app/resources/images/almacenes/" + data[i].imagen,
+							visible: (data[i].visible == "S") ? true : false
+						});*/
+					}
+					/*__Model.Promocion.create({
+						id:1,
+						idComercio: 1,
+						idCenComercial: 1,
+						titulo: "Titulo destacado post",
+						descripcion: "Descripción de la promoción",
+						imagen: "app/resources/images/promos/image1.jpg",
+						meGusta: 8,
+						fechaInicioPublicacion: "2013-10-14",
+						fechaFinPublicacion: "2013-10-19",
+						superPromo: true,
+						visible: true
+					});
+					__Model.Promocion.create({
+						id:2,
+						idComercio: 1,
+						idCenComercial: 1,
+						titulo: "Titulo destacado post",
+						descripcion: "Descripción de la promoción",
+						imagen: "app/resources/images/promos/image2.jpg",
+						meGusta: 28,
+						fechaInicioPublicacion: "2013-10-14",
+						fechaFinPublicacion: "2013-10-19",
+						superPromo: false,
+						visible: true
+					});
+					__Model.Promocion.create({
+						id:3,
+						idComercio: 2,
+						idCenComercial: 2,
+						titulo: "Titulo destacado post",
+						descripcion: "Descripción de la promoción",
+						imagen: "app/resources/images/promos/image3.jpg",
+						meGusta: 15,
+						fechaInicioPublicacion: "2013-10-14",
+						fechaFinPublicacion: "2013-10-19",
+						superPromo: false,
+						visible: true
+					});*/
+					promoPorComercio = __Model.Promocion.byComercioCenCom(comercioId,cenComercialId);
+					numPromoPorComercio = promoPorComercio.length;
+					console.log(promoPorComercio);
+					for(var i = 0;i<numPromoPorComercio;i++){
+						console.log(promoPorComercio[i]);
+						view = new __View.Promocion({
+							model: __Model.Promocion
+						});
+						view.append(promoPorComercio[i]);
+					}
+				});
+			}else{
+				//Si ya existen, igual los pinta
+				//NO SE PUEDE EVITAR EL ELSE, POR CUESTIONES DE TIEMPO EN EL POST
+				for(var i = 0;i<numPromoPorComercio;i++){
+					view = new __View.Promocion({
+						model: __Model.Promocion
+					});
+					view.append(promoPorComercio[i]);
+				}
+			}
+			//console.log(comercioPorCategoria);
+			/**/
+			
+			//Va para la sección que muestra los comercios
+			Lungo.Router.section("almacen1");
+			//alert(categoriaId);
+		}
+        Lungo.init({
+            name: 'appMall',
+			resources: [
+                'app/resources/asides/perfil.html',
+                'app/resources/asides/share.html'],
+            history: false
+        });
+		Lungo.Sugar.AutoComplete().init({
+            el: $$('#txt-ac-destacado'),
+            results_el: $$('#ac-resultados'),
+            choices: ['Arturo', 'Arturo 2'],
+		    //choices: __Model.Categoria.all(),
+            afterx: function(el, e) {
+                alert( el.val() );
+            }
+        });
+		function changeHabeasData(){
+			$$(".window").children().first().removeClass("icon");
+			$$(".window").children().first().removeClass("comment");
+			$$(".window").children().first().empty().html("<img src='app/resources/images/imagen-contacto.png' width='171px' border='0' height='114px' />");
+			//alert("ADA");
+		}
+		function changeSuperPromo(){
+			$$(".window").children().first().removeClass("icon");
+			$$(".window").children().first().removeClass("ok");
+			$$(".window").children().first().empty().html("<img src='app/resources/images/promos/logo-superpromo.png' width='171px' border='0' height='114px' />");
+			//alert("ADA");
+		}
+		//var cachedFramework = Lungo.Cache.get("lungoFramework");
+		var cachedFramework = Lungo.Cache.exists("lungoFramework");
+		console.log(cachedFramework);
+		/*var framework = {name: "Lungo", twitter: "lungojs"};
+		Lungo.Cache.set("lungoFramework", framework);
+		var cachedFramework = Lungo.Cache.exists("lungoFramework");
+		console.log(cachedFramework);*/
+		
+		/*function proof(day,month,year){
+			alert("Day: " + day + " Month: " + Lungo.Sugar.DatePicker.getMonthName('en',month) + " Year: " + year);
+		}
+
+		function showcalendar(){
+		        //startDatepicker(language,callback)
+            		Lungo.Sugar.DatePicker.startDatepicker('en',proof);
+		}*/
+		$$("#fileUpload").on("change", function(evt) {
+			console.log(evt.target.files[0]);
+			archivo = evt.target.files[0];
+			reader = new FileReader();
+			reader.onload = (function (file) {
+				return function (evt) {
+					imgTest = evt.target.result;
+					sendImage(imgTest, archivo);
+					$$("#imgAvatarUsuario").attr("src",imgTest);
+				};
+			}(archivo));
+			reader.readAsDataURL(archivo);
+			//console.log($$.serializeParameters(document.getElementById("files-upload").files));
+			
+		});
+		function sendImage(imgBase64,propArchivo){
+			Lungo.Notification.show();
+			$$.post(
+				'http://www.mukuralab.com/appmall/kumbia/json/subirImgUser',
+				{imageAs64:imgBase64, imageName:propArchivo.name},
+				function(data){
+					console.log("success");
+					console.log(data);
+					switch(data.idError){
+						case "1",1:
+							__Model.Usuario.create({nombre:data.nombreImagen,id:1003});
+							Lungo.Notification.success("Exito","La imagen fue subida correctamente","ok",2);
+						break;
+						default:
+							Lungo.Notification.error("Exito","Ocurrió un error, intenta nuevamente","remove",2);
+						break;
+					}
+				}
+			);
+		}
+    </script>
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+    <script type="text/javascript">
+        app.initialize();
+    </script>
+</body>
+</html>

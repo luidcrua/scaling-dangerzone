@@ -1,0 +1,70 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body {
+	background-color:#999;
+}
+#contenedor-td {
+	max-width:1024px;
+	height:auto;
+	margin-left:auto;
+	margin-right:auto;
+	padding-left:0;
+}
+
+.contAnim {
+	width:50%;
+	max-height:768px;
+	margin: 0;
+	text-align:center;
+	float:left;
+	position:relative;
+}
+.maskdiv {
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	border-radius: 50%;
+	overflow:hidden;
+	display:block;
+	width:120%;
+	height:100%;
+	position:relative;
+}
+.imgBase {
+	bottom: -20%;
+    left: 13%;
+    position: absolute;
+	width:90%;
+}
+.imageAnim {
+	bottom: -5%;
+    height: auto;
+    left: 25%;
+    position: absolute;
+    width: 50%;
+	}
+.topPush {
+    display: table;
+    float: left;
+    height: 615px;
+    position: relative;
+    width: 100%;
+}
+@media (max-width: 800px) {
+
+.topPush {
+    height: 453px;
+}
+}
+@media (max-width: 500px) {
+
+.topPush {
+    height: 275px;
+}
+}
+@media (max-width: 320px) {
+
+.topPush {
+    height: 176px;
+}
+}

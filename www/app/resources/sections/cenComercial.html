@@ -1,0 +1,31 @@
+<section id="centroComercial" data-transition="slide">
+    <header data-title="C.C. SANTAF&Eacute;" data-back="chevron-left">
+    </header>
+    <article id="layout-art1">
+    	
+    </article>
+    <article id="layout-art2" class="active list scroll">
+    	
+    </article>
+    <footer>
+        <nav>
+            <a href="#" data-view-article="layout-art3" data-async="app/resources/articles/prox.html" data-icon-mall="&#xe005;"></a>
+            <a href="#" data-view-article="layout-art2" data-async="app/resources/articles/list-categorias.html" data-icon-mall="&#xe004;" class="active"></a>
+            <a href="#" data-view-article="layout-art3" data-async="app/resources/articles/prox.html" data-icon-mall="&#xe003;"></a>
+            <a href="#" data-view-article="layout-art3" data-async="app/resources/articles/prox.html" data-icon-mall="&#xe002;"></a>
+            <a href="#" data-view-section="logueo" data-async="app/resources/sections/loginit.html" data-icon-mall="&#xe001;"></a>
+            <a href="#" data-view-article="layout-art3" data-async="app/resources/articles/prox.html" data-icon-mall="&#xe000;"></a>
+        </nav>
+    </footer>
+</section>
+<script type="text/javascript">
+/*Lungo.dom('#main-article li').tap(function(event) {
+    Lungo.dom(this).toggleClass('light').toggleClass('dark');
+});*/
+__Controller.list = new CategoriaCtrl("article#layout-art2");
+__Model.Categoria.create({
+  nombre: "Tarea 1",
+  imagen: "Lorem",
+  visible: true
+});
+</script>
